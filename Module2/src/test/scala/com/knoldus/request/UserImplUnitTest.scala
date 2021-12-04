@@ -7,15 +7,20 @@ import org.scalatest.flatspec.AnyFlatSpec
 
 class UserImplUnitTest extends AnyFlatSpec {
 
-  val mockedUserValidator = mock[UserValidator]
+  val mockedUserValidator : UserValidator = mock[UserValidator]
   val userImpl = new UserImpl(mockedUserValidator)
 
-  behavior of "UserImplUnitTest"
-
    "A user" should "be valid" in {
-      val mockUser : User = new User("", "", "", "")
+      val mockUser : User = User("", "", "", "")
       when(mockedUserValidator.userIsValid(mockUser)) thenReturn true
       val result = userImpl.createUser(mockUser)
-      assert(result != None)
+      assert(result.isDefined)
+    }
+
+    it should "be invalid" in {
+      val mockUser : User = User("", "", "", "")
+      when(mockedUserValidator.userIsValid(mockUser)) thenReturn false
+      val result = userImpl.createUser(mockUser)
+      assert(result.isEmpty)
     }
 }

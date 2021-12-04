@@ -11,7 +11,7 @@ class UserValidator {
     val validEmail = emailValidator.emailIdIsValid(user.email)
     val validCompany = companyValidator.getCompanyByName(user.companyName)
 
-    if(validEmail && validCompany != None)
+    if(validEmail && validCompany.isDefined)
       true
     else
       false
