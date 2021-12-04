@@ -4,8 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Module1/Module1.iml" filepath="$PROJECT_DIR$/Module1/Module1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module2/Module2.iml" filepath="$PROJECT_DIR$/Module2/Module2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UTITAssignment.iml" filepath="$PROJECT_DIR$/.idea/modules/UTITAssignment.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UTITAssignment-build.iml" filepath="$PROJECT_DIR$/.idea/modules/UTITAssignment-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utitassignment.iml" filepath="$PROJECT_DIR$/.idea/modules/utitassignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utitassignment-build.iml" filepath="$PROJECT_DIR$/.idea/modules/utitassignment-build.iml" />
     </modules>
   </component>
 </project>
